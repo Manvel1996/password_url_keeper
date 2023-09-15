@@ -1,0 +1,6 @@
+.psw-url-keeper{
+    display: flex;
+    min-height: 100vh;
+    border-radius: 10px;
+    overflow: hidden;
+}
