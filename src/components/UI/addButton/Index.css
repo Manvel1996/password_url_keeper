@@ -1,0 +1,25 @@
+.add-button {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-block: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  border: 1px dashed #afb0b3;
+  background-color: transparent;
+}
+
+.add-button__icon {
+  margin-right: 10px;
+  width: 16px;
+  height: 16px;
+}
+
+.add-button__text {
+  color: #141414;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}

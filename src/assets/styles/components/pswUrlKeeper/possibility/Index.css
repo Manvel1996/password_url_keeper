@@ -1,4 +1,48 @@
-.puk-possibility{
-    width: 16%;
-    border: 1px solid red;
+.puk-possibility {
+  width: 16%;
+}
+
+.add-folder {
+  padding: 8px 4px;
+}
+
+.folder-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.folder-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  cursor: pointer;
+  transition: all 0.5s linear;
+}
+
+.folder-item--active {
+  background: #e8f0ff;
+}
+
+.folder-item:hover {
+  background: #e8f0ff;
+}
+
+.folder-item-title {
+  display: flex;
+}
+
+.folder-item__icon {
+  margin-right: 16px;
+}
+
+.folder-item__name {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.folder-item__dots {
+  display: flex;
+  align-self: end;
 }
