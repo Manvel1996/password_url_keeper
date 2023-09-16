@@ -1,0 +1,19 @@
+.search-input {
+  position: relative;
+}
+
+.search-input__item {
+  padding: 8px 22px;
+  border-radius: 100px;
+  outline: none;
+  border-color: transparent;
+  width: 98%;
+}
+
+.search-input__warning {
+  bottom: -10px;
+  left: 25px;
+  font-size: 10px;
+  color: red;
+  position: absolute;
+}

@@ -12,15 +12,6 @@
   padding-inline: 18px;
 }
 
-.puk-possibility-header__search{
-  padding: 8px 22px;
-  border-radius: 100px;
-  outline: none;
-  border-color: transparent;
-  width: 85%;
-}
-
-.puk-possibility-header-icons__item{
+.puk-possibility-header-icons__item {
   cursor: pointer;
-  height: 28px;
 }

@@ -1,10 +1,14 @@
-import React, { useState } from "react";
+import React, { createContext, useMemo, useState } from "react";
 
-import Possibility from "./possibility";
+import Possibility from "./possibility/Index";
 import Main from "./main";
 import Details from "./details";
 
+import { searchFilter } from "../../utils/helper";
+
 import "../../assets/styles/components/pswUrlKeeper/Index.css";
+
+export const SearchContext = createContext();
 
 export default function () {
   // Example array remove it
@@ -12,6 +16,7 @@ export default function () {
     {
       _id: 1,
       name: "React",
+      iconSrc: "",
       files: [
         {
           id: "a1",
@@ -30,6 +35,7 @@ export default function () {
     {
       _id: 2,
       name: "Vue",
+      iconSrc: "",
       files: [
         {
           id: "a3",
@@ -48,21 +54,33 @@ export default function () {
   ]);
 
   const [activeFolder, setActiveFolder] = useState({});
+  const [search, setSearch] = useState("");
 
+  //  Logic get api add search parametr or this
+  const filtredFolders = useMemo(
+    () => searchFilter(folders, search),
+    [folders, search]
+  );
+
+  //    Logic Get api ...... then   setFolders(data)
   // useEffect(() => {
   //   try {
-  //    Logic Get api ...... then   setFolders(data)
   //   } catch (error) {
   //   }
   // }, []);
 
   return (
     <div className="psw-url-keeper">
-      <Possibility
-        folders={folders}
-        activeFolder={activeFolder}
-        setActiveFolder={setActiveFolder}
-      />
+      <SearchContext.Provider value={[search, setSearch, filtredFolders]}>
+        <Possibility
+          folders={filtredFolders}
+          activeFolder={activeFolder}
+          setActiveFolder={setActiveFolder}
+          search={search}
+          setSearch={setSearch}
+        />
+      </SearchContext.Provider>
+
       <Main />
       <Details />
     </div>

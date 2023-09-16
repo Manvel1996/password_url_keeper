@@ -14,21 +14,13 @@
 }
 .modal-content {
   position: relative;
-  padding: 25px;
-  min-width: 250px;
-  background-color: rgb(255, 255, 255);
+  width: 600px;
+  max-height: 500px;
   border-radius: 10px;
+  background: #FFF;
   transform: scale(0.5);
   transition: 0.4s all;
   overflow-y: auto;
-  max-height: 80%;
-}
-.modal-content__close {
-  font-size: 2rem;
-  position: absolute;
-  cursor: pointer;
-  right: 10px;
-  top: 10px;
 }
 
 .modal--active {

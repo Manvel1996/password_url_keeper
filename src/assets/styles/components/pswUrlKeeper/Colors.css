@@ -1,0 +1,22 @@
+.puk-colors {
+  display: flex;
+  justify-content: space-between;
+}
+
+.puk-colors-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 100%;
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+}
+
+.puk-colors-item__color {
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+}
