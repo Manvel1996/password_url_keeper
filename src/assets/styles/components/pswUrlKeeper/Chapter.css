@@ -1,0 +1,92 @@
+.puk-chapter {
+  position: relative;
+}
+
+.puk-chapter__input {
+  width: 100%;
+  height: 47px;
+  border-radius: 10px;
+  border: 1px solid #dfdfdf;
+  outline: none;
+  padding-inline: 28px;
+  background: transparent;
+}
+
+.puk-chapter-folder-icon {
+  position: absolute;
+  width: 18px;
+  height: 14px;
+  cursor: pointer;
+  top: 16px;
+  right: 28px;
+}
+
+.puk-chapter-content {
+  border-radius: 10px;
+  margin-block: 16px;
+  overflow: hidden;
+  border: 1px solid #dfdfdf;
+}
+
+.puk-chapter-content-header {
+  height: 42px;
+  background: #e8f0ff;
+  padding-inline: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.puk-chapter-content-header__title {
+  color: #4698f0;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.puk-chapter-content-header__icon {
+  width: 14px;
+  height: 14px;
+  cursor: pointer;
+}
+
+.puk-chapter-content-wrapper {
+  padding: 16px 24px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.puk-chapter-content__line {
+  width: 100%;
+  height: 1px;
+  background: #f1f1f1;
+  margin-bottom: 16px;
+}
+
+.puk-chapter-content-buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.puk-chapter-content__button {
+  display: flex;
+  width: 170px;
+  padding: 12px 24px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 555px;
+  border: none;
+  cursor: pointer;
+}
+
+.puk-chapter-content__button--blue {
+  background: #4698f0;
+}
+
+.puk-chapter-content__button--grey {
+  background: #627384;
+}

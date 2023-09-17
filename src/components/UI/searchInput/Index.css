@@ -8,6 +8,10 @@
   outline: none;
   border-color: transparent;
   width: 98%;
+  border: 1px solid #dfdfdf;
+  background-repeat: no-repeat;
+  background-size:24px;
+  background-position: top 6px left 15px;
 }
 
 .search-input__warning {
@@ -16,4 +20,12 @@
   font-size: 10px;
   color: red;
   position: absolute;
+}
+
+.search-input__icon {
+  position: absolute;
+  top: 6px;
+  left: 15px;
+  width: 24px;
+  height: 24px;
 }

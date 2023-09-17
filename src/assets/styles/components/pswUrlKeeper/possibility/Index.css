@@ -47,3 +47,23 @@
 .puk-possibility-folder-item__dots {
   cursor: pointer;
 }
+
+.puk-possibility-subsection__item {
+  color: #000;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.puk-possibility-subsection__item:hover {
+  background: #e8f0ff;
+}
+
+.puk-possibility-subsection__line {
+  background: #f1f1f1;
+  height: 1px;
+  margin-inline: 10px;
+}

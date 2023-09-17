@@ -17,15 +17,47 @@ export default function () {
       _id: 1,
       name: "React",
       iconSrc: "",
+      about: "",
+      folders: [
+        {
+          _id: "b1",
+          name: "Hooks",
+          iconSrc: "",
+          about: "",
+          folders: [],
+          files: [
+            {
+              _id: "c4",
+              password: "c4",
+              url: "https//c4",
+              isfavorite: true,
+            },
+            {
+              _id: "c51",
+              password: "passaac5",
+              url: "https//c5",
+              isfavorite: true,
+            },
+          ],
+        },
+        {
+          _id: "b2",
+          name: "Props",
+          iconSrc: "",
+          about: "",
+          folders: [],
+          files: [],
+        },
+      ],
       files: [
         {
-          id: "a1",
+          _id: "a1",
           password: "pass",
           url: "https//5555..",
           isfavorite: false,
         },
         {
-          id: "a2",
+          _id: "a2",
           password: "pss1",
           url: "https//666sadasasd..",
           isfavorite: false,
@@ -36,15 +68,17 @@ export default function () {
       _id: 2,
       name: "Vue",
       iconSrc: "",
+      about: "",
+      folders: [],
       files: [
         {
-          id: "a3",
+          _id: "a3",
           password: "pass4",
           url: "https//55455454525555..",
           isfavorite: false,
         },
         {
-          id: "a4",
+          _id: "a4",
           password: "pass12",
           url: "https//66241536..",
           isfavorite: false,
@@ -56,18 +90,18 @@ export default function () {
   const [activeFolder, setActiveFolder] = useState({});
   const [search, setSearch] = useState("");
 
-  //  Logic get api add search parametr or this
-  const filtredFolders = useMemo(
-    () => searchFilter(folders, search),
-    [folders, search]
-  );
-
   //    Logic Get api ...... then   setFolders(data)
   // useEffect(() => {
   //   try {
   //   } catch (error) {
   //   }
   // }, []);
+
+  //  Logic get api add search parametr or this
+  const filtredFolders = useMemo(
+    () => searchFilter(folders, search),
+    [folders, search]
+  );
 
   return (
     <div className="psw-url-keeper">

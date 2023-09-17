@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 
 import Modal from "../UI/modal/Index";
+import Colors from "./Colors";
 
 import TrashIcon from "../../assets/images/icons/trash-icon.png";
 import CloseIcon from "../../assets/images/icons/close-icon.png";
@@ -10,10 +11,10 @@ import VisiblePasswordIcon from "../../assets/images/icons/visible-password-icon
 import InvisblePasswordIcon from "../../assets/images/icons/invisible-password-icon.png";
 
 import "../../assets/styles/components/pswUrlKeeper/ProjectForm.css";
-import Colors from "./Colors";
 
 export default function ProjectForm({ visible, setVisible }) {
-  const [projectName, setProjectname] = useState("");
+
+  const [projectName, setProjectName] = useState("");
   const [login, setLogin] = useState("");
   const [password, setPassword] = useState("");
   const [repeatPassword, setRepeatPassword] = useState("");
@@ -26,14 +27,15 @@ export default function ProjectForm({ visible, setVisible }) {
 
   useEffect(() => {
     // write the logic there, get the project from the link or the project from the props....
-    // setProjectname(project.projectName)
+    // setProjectName(project.projectName)
     // setLogin(project.login)
     //......
   }, []);
 
   function submitHandler(e) {
     e.preventDefault();
-    // write post link logic and get sucsess or warning setPasswordWorning("...")
+    // write post link logic 
+    // if success setVisible(false)
   }
 
   function removeProjectHandler() {
@@ -77,7 +79,7 @@ export default function ProjectForm({ visible, setVisible }) {
             type="text"
             value={projectName}
             className="puk-project-form__input"
-            onChange={(e) => setProjectname(e.target.value)}
+            onChange={(e) => setProjectName(e.target.value)}
           />
         </label>
 

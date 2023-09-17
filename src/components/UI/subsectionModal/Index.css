@@ -1,0 +1,42 @@
+.subsection-modal {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.5s;
+}
+
+.subsection-modal-content {
+  position: relative;
+  width: 200px;
+  max-height: 300px;
+  border-radius: 10px 0 10px 10px;
+  background: #fff;
+  transform: scale(0.5);
+  transition: 0.4s all;
+  filter: drop-shadow(0px 0px 10px rgba(143, 143, 143, 0.25));
+}
+
+.subsection-modal-content__triangle {
+  position: absolute;
+  border-top-right-radius: 8px;
+  border-style: solid;
+  border-color: transparent transparent white transparent;
+  border-width: 0 0 16px 16px;
+  top: -16px;
+  right: 0;
+}
+
+.subsection-modal--active {
+  pointer-events: all;
+  z-index: 1;
+  opacity: 1;
+  transform: scale(1);
+}
+
+.subsection-modal-content .subsection-modal--active {
+  transform: scale(1.1);
+}

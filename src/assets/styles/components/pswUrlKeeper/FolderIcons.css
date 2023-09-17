@@ -1,0 +1,11 @@
+.puk-folder-icons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.puk-folder-icons-item {
+  width: 52px;
+  height: 48px;
+  cursor: pointer;
+  border-radius: 10px;
+}
