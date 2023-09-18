@@ -28,7 +28,7 @@ export default function Chapter({ activeFolder }) {
 
   const filtredFolders = useMemo(
     () => searchFilter(activeFolder?.folders, search),
-    [search]
+    [search, activeFolder]
   );
 
   return (
@@ -71,11 +71,7 @@ export default function Chapter({ activeFolder }) {
 
             {/* I don't understand what folders are there */}
 
-            <div className="puk-chapter-list">
-              {filtredFolders?.map((el) => (
-                <ChapterItem arr={el?.folders} />
-              ))}
-            </div>
+            <ChapterItem filtredFolders={filtredFolders} />
 
             {/* ****************************************** */}
 

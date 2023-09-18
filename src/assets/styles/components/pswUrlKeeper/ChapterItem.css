@@ -1,0 +1,29 @@
+.puk-chapter-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 13px 33px;
+  cursor: pointer;
+}
+
+.puk-chapter-item:hover {
+  background: #e8f0ff;
+}
+
+.puk-chapter-item__arrow-icon {
+  width: 12px;
+  height: 6px;
+}
+
+.puk-chapter-item__folder-icon {
+  width: 20px;
+  height: 16px;
+}
+
+.puk-chapter-item__name {
+  color: #141414;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
