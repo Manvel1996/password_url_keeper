@@ -74,12 +74,14 @@ export default function () {
       files: [
         {
           _id: "a1",
+          fileImg: "",
           password: "pass",
           url: "https//5555..",
-          isfavorite: false,
+          isfavorite: true,
         },
         {
           _id: "a2",
+          fileImg: "",
           password: "pss1",
           url: "https//666sadasasd..",
           isfavorite: false,
@@ -95,12 +97,14 @@ export default function () {
       files: [
         {
           _id: "a3",
+          fileImg:"",
           password: "pass4",
           url: "https//55455454525555..",
           isfavorite: false,
         },
         {
           _id: "a4",
+          fileImg:"",
           password: "pass12",
           url: "https//66241536..",
           isfavorite: false,
@@ -137,7 +141,7 @@ export default function () {
         />
       </SearchContext.Provider>
 
-      <Main />
+      <Main activeFolder={activeFolder} />
       <Details />
     </div>
   );

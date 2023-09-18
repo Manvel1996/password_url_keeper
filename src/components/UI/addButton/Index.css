@@ -10,6 +10,10 @@
   background-color: transparent;
 }
 
+.add-button:hover {
+  background: #e8f0ff;
+}
+
 .add-button__icon {
   margin-right: 10px;
   width: 16px;
